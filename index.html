@@ -9,45 +9,76 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
       background: #0f0f0f;
       color: white;
-      text-align: center;
     }
+
+    /* Hero Section */
     header {
-      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
       background: linear-gradient(135deg, #ff4d00, #ff9900);
+      color: white;
+      padding: 0 20px;
     }
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
     }
     header p {
       font-size: 1.2rem;
       opacity: 0.9;
+      max-width: 500px;
     }
+
+    /* Section Styling */
     section {
-      padding: 40px 20px;
-      max-width: 800px;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    section p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      line-height: 1.6;
+      max-width: 700px;
       margin: auto;
     }
+
+    /* Button */
     .btn {
       display: inline-block;
+      margin-top: 25px;
       background: #ff6600;
-      padding: 12px 24px;
+      padding: 12px 28px;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       transition: background 0.3s;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
     .btn:hover {
       background: #ff8533;
     }
+
+    /* Footer */
     footer {
       font-size: 0.85rem;
       padding: 20px;
       background: #1a1a1a;
       opacity: 0.7;
+      text-align: center;
     }
   </style>
 </head>
@@ -55,22 +86,16 @@
 
   <header>
     <h1>Digital Phoenix</h1>
-    <p>Rising to craft immersive worlds & unforgettable stories</p>
+    <p>Independent Game Studio — Crafting Worlds, Igniting Imagination</p>
   </header>
 
   <section>
     <h2>About Us</h2>
     <p>
-      Digital Phoenix is an independent game studio focused on creating cinematic, character-driven experiences. 
-      Our goal is to blend storytelling and gameplay into seamless, memorable adventures.
-    </p>
-  </section>
-
-  <section>
-    <h2>Our Current Project</h2>
-    <p>
-      <strong>OSIRIS</strong> — a grounded sci-fi action-adventure set in Earth's orbit, featuring EVA traversal, 
-      stealth mechanics, and a narrative-rich world.
+    Based in Chicago, IL, Digital Phoenix is an independent game developer and publisher 
+    committed to creating immersive, story-driven experiences. Our current project — 
+    codenamed <em>OSIRIS</em> — represents our vision for blending engaging gameplay with 
+    cinematic storytelling.
     </p>
     <a href="mailto:contact@digitalphoenix.com" class="btn">Contact Us</a>
   </section>
