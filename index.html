@@ -9,11 +9,14 @@
 	<title>Digital Phoenix</title>
 	
 	<style>
-    body {
-		font-family: 'Segoe UI', sans-serif;
+    /* Global */
+    html, body {
 		margin: 0;
+		padding: 0;
+		font-family: 'Segoe UI', sans-serif;
 		background: #0f0f0f;
 		color: white;
+		overflow-x: hidden;
     }
 
     /* Hero Section */
@@ -34,6 +37,7 @@
 		font-size: 1.2rem;
 		opacity: 0.9;
 		max-width: 500px;
+		margin: 0;
     }
 
     /* Section Styling */
@@ -59,7 +63,10 @@
 	
 	/* Logo */
 	.logo {
-		max-width: 750px;
+		max-width: 100%;
+		max-height: 150px
+		width: auto;
+		height: auto;
 		margin-bottom: 0px;
 	}
 
@@ -117,6 +124,27 @@
 	footer .social-links {
 		margin-top: 10px;
 	}
+	
+	/* Responsive for mobile */
+    @media (max-width: 480px) {
+        header, section {
+            padding: 0 10px;
+        }
+        
+        header p {
+            font-size: 1rem;
+            max-width: 90%;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+        }
+
+        section p {
+            font-size: 1rem;
+            max-width: 95%;
+        }
+    }
   </style>
 </head>
 
