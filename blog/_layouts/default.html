@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | Digital Phoenix</title>
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #0f0f0f;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+    }
+    header h1 {
+      margin: 0;
+      color: #cc0000;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    a { color: #cc0000; text-decoration: none; }
+    a:hover { color: #ff0000; }
+    footer {
+      text-align: center;
+      background: #111;
+      color: #fff;
+      font-size: 0.85rem;
+      padding: 30px 20px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="/blog/">Digital Phoenix Dev Blog</a></h1>
+  </header>
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  <footer>
+    &copy; 2025 Digital Phoenix LLC. All rights reserved.
+  </footer>
+</body>
+</html>
