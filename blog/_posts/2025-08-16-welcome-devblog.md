@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Welcome to the Dev Blog"
 date: 2025-08-16
 ---
