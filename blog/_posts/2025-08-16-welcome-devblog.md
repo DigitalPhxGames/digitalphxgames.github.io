@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Welcome to the Digital Phoenix Dev Blog"
 date: 2025-08-16
 ---
@@ -13,12 +13,3 @@ We’ll be using this space to share behind-the-scenes updates, progress on our 
 We believe in keeping players informed, so you’ll find early concepts, technical breakdowns, and even some fun experiments here.
 
 Stay tuned - more updates coming soon!
-
-<div style="margin: 20px 0;">
-<!--
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-			title="YouTube video player" frameborder="0" 
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-			allowfullscreen></iframe>
--->
-</div>
