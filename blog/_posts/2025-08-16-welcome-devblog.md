@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Welcome to the Digital Phoenix Dev Blog"
 date: 2025-08-16
 ---

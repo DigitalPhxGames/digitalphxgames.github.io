@@ -170,7 +170,7 @@ section p {
     background: #e60000;
 }
 
-/* Navigation */
+/* Navigation
 .navbar {
     position: fixed;
     top: 0;
@@ -228,9 +228,9 @@ section p {
 }
 
 /* Prevent header overlap */
-header {
+/* header {
     margin-top: 50px;
-}
+} */
 
 /* Footer */
 footer {
