@@ -7,40 +7,69 @@ date: 2025-08-16
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }} | Digital Phoenix</title>
-    <link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
-    <link rel="apple-touch-icon" href="{{ '/favicon.png' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} | Digital Phoenix</title>
+  <link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/png" />
+  <link rel="apple-touch-icon" href="{{ '/favicon.png' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  <style>
+    /* Inline CSS for blog post page specific tweaks */
+    .blog-post {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      color: white;
+      text-align: left;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.7;
+    }
+
+    .blog-post h2 {
+      color: #cc0000;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .blog-post .date {
+      font-size: 0.9rem;
+      opacity: 0.6;
+      margin-bottom: 25px;
+      font-style: italic;
+      color: #e04e4e;
+    }
+
+    .blog-post p {
+      margin-bottom: 1.5em;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <a href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/images/DigitalPhoenix_Logo_White.png' | relative_url }}" alt="Digital Phoenix Logo"
-                class="logo" />
-        </a>
-    </header>
+  <header>
+    <a href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/DigitalPhoenix_Logo_White.png' | relative_url }}" alt="Digital Phoenix Logo" class="logo" />
+    </a>
+  </header>
 
-    <article>
-        <h2>Our First Update</h2>
-        <p>Welcome to the official <strong>Digital Phoenix Dev Blog</strong>!</p>
-        <p>We’ll be using this space to share behind-the-scenes updates, progress on our current project
-            <em>OSIRIS</em>, and insights into our development process.</p>
-        <p>We believe in keeping players informed, so you’ll find early concepts, technical breakdowns, and even some
-            fun experiments here.</p>
-        <p>Stay tuned - more updates coming soon!</p>
-    </article>
+  <article class="blog-post">
+    <p class="date">August 16, 2025</p>
+    <h2>Our First Update</h2>
+    <p>Welcome to the official <strong>Digital Phoenix Dev Blog</strong>!</p>
+    <p>We’ll be using this space to share behind-the-scenes updates, progress on our current project <em>OSIRIS</em>, and insights into our development process.</p>
+    <p>We believe in keeping players informed, so you’ll find early concepts, technical breakdowns, and even some fun experiments here.</p>
+    <p>Stay tuned - more updates coming soon!</p>
+  </article>
 
-    <footer>
-        <div class="footer-content">
-            <p class="copyright">&copy; 2025 Digital Phoenix LLC. All rights reserved.</p>
-            <p class="copyright">"Digital Phoenix"™ and the Phoenix logo™ are trademarks of Digital Phoenix.
-                Unauthorized use
-                is prohibited.</p>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer-content">
+      <p class="copyright">&copy; 2025 Digital Phoenix LLC. All rights reserved.</p>
+      <p class="copyright">"Digital Phoenix"™ and the Phoenix logo™ are trademarks of Digital Phoenix.
+        Unauthorized use is prohibited.</p>
+    </div>
+  </footer>
 </body>
 
 </html>
