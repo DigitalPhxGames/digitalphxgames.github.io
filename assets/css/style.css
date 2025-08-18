@@ -108,29 +108,41 @@ section p {
 
 /* Blog Post Page */
 .blog-post {
-    background: #1a1a1a;
-    padding: 60px 30px;
-    margin: 60px auto;
     max-width: 800px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    margin: 60px auto;
+    padding: 0 20px;
     color: white;
-    line-height: 1.8;
-    text-align: left; /* ← KEY CHANGE */
+    text-align: left;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+}
+
+.blog-post h2 {
+    color: #cc0000;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
 }
 
 .blog-post h1 {
     font-size: 2.4rem;
     color: #cc0000;
-    text-align: left; /* ← KEY CHANGE */
+    text-align: left;
+    /* ← KEY CHANGE */
     margin-bottom: 0.5em;
 }
 
 .blog-post .date {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     opacity: 0.6;
-    margin-bottom: 2em;
-    text-align: left; /* ← KEY CHANGE */
+    margin-bottom: 25px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.blog-post p {
+    margin-bottom: 1.5em;
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
 
 .blog-post .post-content {
