@@ -1,7 +1,11 @@
 ---
 title: "Welcome to the Digital Phoenix Dev Blog"
 date: 2025-08-16
+layout: post
 ---
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />

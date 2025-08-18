@@ -170,68 +170,6 @@ section p {
     background: #e60000;
 }
 
-/* Navigation
-.navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1000;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.hamburger {
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: white;
-    display: block;
-}
-
-.nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 200px;
-    height: 100%;
-    background: #111;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    transition: right 0.3s ease;
-}
-
-.nav-links li {
-    margin: 0;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #cc0000;
-}
-
-.nav-links.show {
-    right: 0;
-}
-
-/* Prevent header overlap */
-/* header {
-    margin-top: 50px;
-} */
-
 /* Footer */
 footer {
     color: #fff;
