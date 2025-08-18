@@ -1,14 +1,24 @@
 ---
-layout: posts
-title: "Welcome to the Dev Blog"
+layout: default
+title: "Welcome to the Digital Phoenix Dev Blog"
 date: 2025-08-16
 ---
 
+## Our First Update
+
 Welcome to the official **Digital Phoenix Dev Blog**!
 
-Here, we’ll be sharing updates about our projects, behind-the-scenes progress, and development insights.  
+We’ll be using this space to share behind-the-scenes updates, progress on our current project *OSIRIS*, and insights into our development process.
 
-<!-- 🎥 Check out our first video update:  
+We believe in keeping players informed, so you’ll find early concepts, technical breakdowns, and even some fun experiments here.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+Stay tuned - more updates coming soon!
+
+<div style="margin: 20px 0;">
+<!--
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+			title="YouTube video player" frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+			allowfullscreen></iframe>
 -->
+</div>

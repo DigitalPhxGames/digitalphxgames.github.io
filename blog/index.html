@@ -1,38 +1,19 @@
 ---
+layout: default
 title: Dev Blog
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title }} | Digital Phoenix</title>
-  <link rel="icon" href="/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/favicon.png">
-  <link rel="stylesheet" href="../assets/css/style.css">
-</head>
+<section class="blog-index">
+    <h2>Latest Updates</h2>
 
-<body>
-  <header>
-    <img src="../assets/images/DigitalPhoenix_Logo_White.png" alt="Digital Phoenix Logo" class="logo" />
-  </header>
- 
-<h2>Latest Updates</h2>
-<ul class="blog-list">
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> — 
-      <small>{{ post.date | date: "%B %d, %Y" }}</small>
-    </li>
-  {% endfor %}
-</ul>
-
-  <footer>
-    <div class="footer-content">
-      <p class="copyright">&copy; 2025 Digital Phoenix LLC. All rights reserved.</p>
-      <p class="copyright">"Digital Phoenix"™ and the Phoenix logo™ are trademarks of Digital Phoenix. Unauthorized use is prohibited.</p>
+    <div class="blog-list">
+        {% for post in site.posts %}
+        <article class="blog-card">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p class="excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+            <a href="{{ post.url | relative_url }}" class="btn">Read More</a>
+        </article>
+        {% endfor %}
     </div>
-  </footer>
-</body>
-</html>
+</section>

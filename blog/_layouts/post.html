@@ -10,32 +10,19 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
-<script>
-    function toggleMenu() {
-        document.getElementById("navLinks").classList.toggle("show");
-    }
-</script>
-
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/blog/' | relative_url }}">Dev Blog</a></li>
-                <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-                <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
     <header>
         <img src="{{ '/assets/images/DigitalPhoenix_Logo_White.png' | relative_url }}" alt="Digital Phoenix Logo"
             class="logo" />
     </header>
 
-    <section>
-        {{ content }}
-    </section>
+    <article class="blog-post">
+        <h1>{{ page.title }}</h1>
+        <p class="date">{{ page.date | date: "%B %d, %Y" }}</p>
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </article>
 
     <footer>
         <div class="footer-content">
