@@ -3,6 +3,23 @@ layout: default
 title: Dev Blog
 ---
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} | Digital Phoenix</title>
+    <link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ '/favicon.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<header>
+    <img src="{{ '/assets/images/DigitalPhoenix_Logo_White.png' | relative_url }}" alt="Digital Phoenix Logo"
+        class="logo" />
+</header>
+
 <section class="blog-index">
     <h2>Latest Updates</h2>
 
@@ -17,3 +34,15 @@ title: Dev Blog
         {% endfor %}
     </div>
 </section>
+
+<footer>
+    <div class="footer-content">
+        <p class="copyright">&copy; 2025 Digital Phoenix LLC. All rights reserved.</p>
+        <p class="copyright">"Digital Phoenix"™ and the Phoenix logo™ are trademarks of Digital Phoenix.
+            Unauthorized use
+            is prohibited.</p>
+    </div>
+</footer>
+</body>
+
+</html>
