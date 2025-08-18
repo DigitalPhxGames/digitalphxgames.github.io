@@ -11,25 +11,36 @@
 </head>
 
 <body>
-    {% include nav.html %}
+    <div id="nav-placeholder"></div>
 
     <section>
         {{ content }}
     </section>
 
-    {% include footer.html %}
+    <div id="footer-placeholder"></div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const hamburger = document.getElementById('hamburger');
-            const navLinks = document.getElementById('navLinks');
+        function loadHTML(selector, file) {
+            fetch(file)
+                .then(res => res.text())
+                .then(html => {
+                    document.querySelector(selector).innerHTML = html;
 
-            hamburger?.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
+                    if (file.includes('nav')) {
+                        const hamburger = document.getElementById('hamburger');
+                        const navLinks = document.getElementById('navLinks');
+                        hamburger?.addEventListener('click', () => {
+                            navLinks.classList.toggle('active');
+                        });
+                    }
+                });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadHTML('#nav-placeholder', '/partials/nav.html');
+            loadHTML('#footer-placeholder', '/partials/footer.html');
         });
     </script>
-
 </body>
 
 </html>
