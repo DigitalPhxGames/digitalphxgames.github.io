@@ -123,52 +123,18 @@ section p {
     margin-bottom: 10px;
 }
 
-.blog-post h1 {
-    font-size: 2.4rem;
-    color: #cc0000;
-    text-align: left;
-    /* ← KEY CHANGE */
-    margin-bottom: 0.5em;
-}
-
 .blog-post .date {
     font-size: 0.9rem;
     opacity: 0.6;
     margin-bottom: 25px;
     font-style: italic;
-    color: #ffffff;
+    color: #7b7b7b;
 }
 
 .blog-post p {
     margin-bottom: 1.5em;
     font-size: 1.1rem;
     opacity: 0.9;
-}
-
-.blog-post .post-content {
-    font-size: 1.1rem;
-    opacity: 0.9;
-    max-width: 100%;
-}
-
-.blog-post .post-content h2,
-.blog-post .post-content h3 {
-    color: #cc0000;
-    margin-top: 2em;
-    margin-bottom: 0.5em;
-}
-
-.blog-post .post-content p {
-    margin-bottom: 1.5em;
-}
-
-.blog-post img,
-.blog-post iframe {
-    max-width: 100%;
-    border-radius: 8px;
-    margin: 30px 0;
-    display: block;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 /* Logo */
