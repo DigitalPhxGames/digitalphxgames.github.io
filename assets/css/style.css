@@ -36,6 +36,50 @@ header p {
     margin: 0;
 }
 
+/* Position nav in top-right corner inside header */
+.header-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    /* semi-transparent background */
+    border-radius: 8px;
+    padding: 8px 12px;
+    backdrop-filter: blur(6px);
+}
+
+.header-nav .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.header-nav .nav-links a:hover {
+    color: #cc0000;
+}
+
+.header-nav .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.header-nav .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
 /* Section Styling */
 section {
     padding: 60px 20px;
@@ -199,6 +243,69 @@ footer a.footer-link:hover {
 
 footer .social-links {
     margin-top: 10px;
+}
+
+/* Responsive - mobile menu toggle */
+@media (max-width: 700px) {
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .header-nav .nav-links {
+        position: absolute;
+        top: 60px;
+        /* directly below the hamburger button */
+        right: 20px;
+        background: rgba(20, 20, 20, 0.95);
+        flex-direction: column;
+        width: 160px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.25s ease-out;
+    }
+
+    .header-nav .nav-links.active {
+        transform: scaleY(1);
+    }
+
+    .header-nav .nav-links a {
+        padding: 10px 0;
+        font-size: 1rem;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .header-nav .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .header-nav .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+        transition: background 0.2s ease;
+    }
+
+    .header-nav .hamburger:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .header-nav .hamburger div {
+        width: 24px;
+        height: 3px;
+        background: white;
+        margin: 3px 0;
+        border-radius: 2px;
+    }
 }
 
 /* Responsive for mobile */
