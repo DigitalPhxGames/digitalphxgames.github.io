@@ -19,28 +19,7 @@
 
     <div id="footer-placeholder"></div>
 
-    <script>
-        function loadHTML(selector, file) {
-            fetch(file)
-                .then(res => res.text())
-                .then(html => {
-                    document.querySelector(selector).innerHTML = html;
-
-                    if (file.includes('nav')) {
-                        const hamburger = document.getElementById('hamburger');
-                        const navLinks = document.getElementById('navLinks');
-                        hamburger?.addEventListener('click', () => {
-                            navLinks.classList.toggle('active');
-                        });
-                    }
-                });
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            loadHTML('#nav-placeholder', '/partials/nav.html');
-            loadHTML('#footer-placeholder', '/partials/footer.html');
-        });
-    </script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 
 </html>

@@ -14,47 +14,27 @@ title: Dev Blog
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
-<div id="nav-placeholder"></div>
+<body>
+    <div id="nav-placeholder"></div>
 
-<section class="blog-index">
-    <h2>Latest Updates</h2>
+    <section class="blog-index">
+        <h2>Latest Updates</h2>
 
-    <div class="blog-list">
-        {% for post in site.posts %}
-        <article class="blog-card">
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
-            <p class="excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-            <a href="{{ post.url | relative_url }}" class="btn">Read More</a>
-        </article>
-        {% endfor %}
-    </div>
-</section>
+        <div class="blog-list">
+            {% for post in site.posts %}
+            <article class="blog-card">
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
+                <p class="excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+                <a href="{{ post.url | relative_url }}" class="btn">Read More</a>
+            </article>
+            {% endfor %}
+        </div>
+    </section>
 
-<div id="footer-placeholder"></div>
+    <div id="footer-placeholder"></div>
 
-<script>
-    function loadHTML(selector, file) {
-        fetch(file)
-            .then(res => res.text())
-            .then(html => {
-                document.querySelector(selector).innerHTML = html;
-
-                if (file.includes('nav')) {
-                    const hamburger = document.getElementById('hamburger');
-                    const navLinks = document.getElementById('navLinks');
-                    hamburger?.addEventListener('click', () => {
-                        navLinks.classList.toggle('active');
-                    });
-                }
-            });
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        loadHTML('#nav-placeholder', '/partials/nav.html');
-        loadHTML('#footer-placeholder', '/partials/footer.html');
-    });
-</script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the Digital Phoenix Dev Blog"
+title: "Welcome to the offical Dev Blog"
 date: 2025-08-16
 ---
 
@@ -20,7 +20,7 @@ date: 2025-08-16
 
     <article class="blog-post">
         <p class="date">August 16, 2025</p>
-        <h2>Welcome to the official Digital Phoenix Dev Blog!</h2>
+        <h2>Welcome to the official Dev Blog</h2>
         <p>We’ll be using this space to share behind-the-scenes updates, progress on our current project
             <em>OSIRIS</em>, and insights into our development process.</p>
         <p>We believe in keeping players informed, so you’ll find early concepts, technical breakdowns, and even some
@@ -30,27 +30,6 @@ date: 2025-08-16
 
     <div id="footer-placeholder"></div>
 
-    <script>
-        function loadHTML(selector, file) {
-            fetch(file)
-                .then(res => res.text())
-                .then(html => {
-                    document.querySelector(selector).innerHTML = html;
-
-                    if (file.includes('nav')) {
-                        const hamburger = document.getElementById('hamburger');
-                        const navLinks = document.getElementById('navLinks');
-                        hamburger?.addEventListener('click', () => {
-                            navLinks.classList.toggle('active');
-                        });
-                    }
-                });
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            loadHTML('#nav-placeholder', '/partials/nav.html' );
-            loadHTML('#footer-placeholder', '/partials/footer.html');
-        });
-    </script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>
